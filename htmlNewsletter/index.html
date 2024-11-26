@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewsletterTech</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <img src="assets/img/logo.png" alt="Logo NewsletterTech" class="logo">
+            <nav>
+                <a href="#inicio">Início</a>
+                <a href="#sobre">Sobre Nós</a>
+                <a href="#conteudo">Conteúdo</a>
+                <a href="#contato">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="inicio">
+            <h2>Bem-vindo à NewsletterTech</h2>
+            <p>As últimas tendências e inovações em tecnologia, do seu dia, direto para você.</p>
+        </section>
+
+        <section id="conteudo">
+            <h2>Tópicos em Destaque</h2>
+            <div class="card">
+                <div>
+                    <img src="assets/img/ai.jpg" alt="Inteligência Artificial">
+                    <h3>Inteligência Artificial</h3>
+                    <p>A Inteligência Artificial (IA) está se tornando cada vez mais presente em nossas vidas,
+                        impactando
+                        setores como saúde, finanças, transporte e muito mais...</p>
+                    <!-- Adicionando uma lista -->
+                    <ul>
+                        <li><a href="https://www.newstech.com.br/ia/saude.htm">IA na saúde: Diagnóstico automatizado</a>
+                        </li>
+                        <li><a href="https://www.newstech.com.br/ia/financas.htm">IA nas finanças: Previsão de
+                                mercados</a>
+                        </li>
+                        <li><a href="https://www.newstech.com.br/ia/transporte.htm">IA no transporte: Veículos
+                                autônomos</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <img src="assets/img/web.jpg" alt="Desenvolvimento Web">
+
+                    <h3>Desenvolvimento Web</h3>
+                    <p>O desenvolvimento web evolui a cada dia, trazendo novas ferramentas, frameworks e práticas para
+                        construir websites mais rápidos, acessíveis e interativos...</p>
+                    <!-- Adicionando uma lista -->
+                    <ul>
+                        <li><a href="https://www.newstech.com.br/web/javascript-frameworks.htm">JavaScript moderno e
+                                frameworks</a></li>
+                        <li><a href="https://www.newstech.com.br/web/css-avancado.htm">CSS avançado para design
+                                responsivo</a></li>
+                        <li><a href="https://www.newstech.com.br/web/otimizacao-desempenho.htm">Ferramentas de
+                                otimização de
+                                desempenho</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <img src="assets/img/gadgets.jpg" alt="Gadgets">
+                    <h3>Gadgets</h3>
+                    <p>Os gadgets são dispositivos tecnológicos inovadores que aprimoram o dia a dia, seja em termos de
+                        produtividade, entretenimento ou conforto...</p>
+                    <!-- Adicionando uma lista -->
+                    <ul>
+                        <li><a href="https://www.newstech.com.br/gadgets/smartwatches.htm">Smartwatches e fones de
+                                ouvido
+                                inteligentes</a></li>
+                        <li><a href="https://www.newstech.com.br/gadgets/realidade-aumentada.htm">Realidade aumentada e
+                                virtual</a></li>
+                        <li><a href="https://www.newstech.com.br/gadgets/automacao-residencial.htm">Gadgets de automação
+                                residencial</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre">
+            <h2>Sobre Nós</h2>
+            <p>Bem-vindo à <strong>NewsletterTech</strong>, um projeto desenvolvido por um aluno do quarto período do
+                curso de Sistemas de Informação da <strong>Unimater</strong>, como parte da disciplina de
+                Desenvolvimento Web. Este site nasceu de um trabalho de finalização da matéria, que teve como objetivo
+                integrar conhecimentos adquiridos durante o semestre, como o uso de HTML, CSS, JavaScript e boas
+                práticas de desenvolvimento web.</p>
+
+            <p>Este projeto representa o nosso aprendizado durante a disciplina, mas também é um reflexo da nossa paixão
+                por tecnologia e pela disseminação de conhecimento. Criar este site foi uma oportunidade para nós
+                explorarmos as tendências atuais da web e ao mesmo tempo apresentarmos um conteúdo relevante para os
+                interessados em tecnologia, IA, gadgets e muito mais.</p>
+
+            <p>Além disso, a <strong>NewsletterTech</strong> reflete nossa visão sobre como a web pode ser usada para
+                compartilhar informações de maneira dinâmica e interativa. Acreditamos que a tecnologia é uma poderosa
+                ferramenta de transformação e queremos proporcionar um espaço onde os usuários possam encontrar as
+                últimas notícias, tendências e dicas sobre o universo tecnológico de forma simples e eficiente.</p>
+
+            <p>Nosso trabalho não termina aqui. Estamos comprometidos em continuar aprimorando o site, com novos
+                recursos, atualizações de conteúdo e melhorias constantes baseadas no feedback dos nossos usuários.
+                Agradecemos pela visita e esperamos que aproveite o conteúdo que preparamos com tanto empenho!</p>
+        </section>
+
+        <section id="contato">
+            <h2>Entre em Contato</h2>
+            <form action="#">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="assunto">Assunto:</label>
+                <select id="assunto" name="assunto">
+                    <option value="duvidas">Dúvidas</option>
+                    <option value="sugestoes">Sugestões</option>
+                    <option value="outros">Outros</option>
+                </select>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="3"></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2024 NewsletterTech. Todos os direitos reservados.</p>
+        <p>Entre em contato via e-mail: wclinharesfilho@gmail.com</p>
+    </footer>
+</body>
+
+</html>

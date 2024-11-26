@@ -1,0 +1,303 @@
+/* Tema Dracula */
+:root {
+    --background: #282a36;
+    --current-line: #44475a;
+    --foreground: #f8f8f2;
+    --comment: #6272a4;
+    --cyan: #8be9fd;
+    --green: #50fa7b;
+    --orange: #ffb86c;
+    --pink: #ff79c6;
+    --purple: #bd93f9;
+    --red: #ff5555;
+    --yellow: #f1fa8c;
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(45deg, var(--background), var(--current-line));
+    color: var(--foreground);
+    line-height: 1.6;
+}
+
+/* Container principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Cabeçalho */
+header {
+    background: var(--current-line);
+    padding: 20px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease;
+}
+
+header:hover {
+    background: var(--purple);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    height: 50px;
+}
+
+header h1 {
+    color: var(--pink);
+    margin: 0;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px var(--purple);
+    transition: transform 0.3s ease;
+}
+
+header h1:hover {
+    transform: scale(1.1);
+}
+
+header nav a {
+    color: var(--foreground);
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: var(--cyan);
+    transform: translateY(-3px);
+}
+
+/* Seções */
+section {
+    margin-bottom: 50px;
+    padding: 30px;
+    background: var(--current-line);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+section h2 {
+    color: var(--yellow);
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-shadow: 1px 1px var(--purple);
+}
+
+section p {
+    color: var(--comment);
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Seção Sobre Nós */
+#sobre {
+    padding: 20px;
+}
+
+#sobre h2 {
+    font-size: 1.6rem;
+}
+
+#sobre p {
+    font-size: 1rem;
+}
+
+/* Seção Entre em Contato */
+#contato {
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contato h2 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+
+#contato form label {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+#contato form input,
+#contato form select,
+#contato form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid var(--foreground);
+    border-radius: 5px;
+    background: var(--background);
+    color: var(--foreground);
+    width: 100%;
+    box-sizing: border-box;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+#contato form textarea {
+    resize: none;
+}
+
+#contato form button {
+    padding: 10px 20px;
+    background: var(--pink);
+    color: var(--foreground);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+#contato form button:hover {
+    background: var(--purple);
+    transform: translateY(-3px);
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.card div {
+    text-align: center;
+    max-width: 300px;
+    background: var(--background);
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.card div:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+    transition: transform 0.3s;
+}
+
+.card img:hover {
+    transform: scale(1.05);
+}
+
+.card h3 {
+    color: var(--pink);
+    margin: 10px 0;
+    font-size: 1.3rem;
+}
+
+.card p {
+    color: var(--comment);
+}
+
+/* Lista no card */
+.card ul {
+    list-style-type: none;
+    /* Remove os pontos de lista */
+    margin: 0;
+    /* Remove a margem da esquerda */
+    padding: 0;
+    /* Remove o padding */
+    display: flex;
+    /* Alinha os itens em linha */
+    flex-direction: column;
+    /* Alinha os itens verticalmente */
+    align-items: center;
+    /* Centraliza os itens na horizontal */
+    justify-content: center;
+    /* Centraliza os itens na vertical */
+    gap: 10px;
+    /* Espaçamento entre os itens */
+}
+
+.card ul li {
+    font-size: 1.1rem;
+    color: var(--comment);
+    text-align: center;
+    /* Garante que o texto fique centralizado */
+    width: 100%;
+    /* Faz com que os itens da lista se ajustem ao container */
+}
+
+.card ul li a {
+    text-decoration: none;
+    color: var(--comment);
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.card ul li a:hover {
+    color: var(--cyan);
+    transform: translateX(5px);
+    /* Pequeno movimento para a direita ao passar o mouse */
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    background: var(--current-line);
+    padding: 15px;
+    color: var(--comment);
+    border-top: 2px solid var(--pink);
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
+
+footer:hover {
+    background: var(--purple);
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header nav {
+        margin-top: 20px;
+    }
+
+    .card {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .card div {
+        max-width: 100%;
+    }
+}
